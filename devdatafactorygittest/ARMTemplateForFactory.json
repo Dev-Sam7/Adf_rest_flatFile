@@ -75,11 +75,33 @@
 								"parameters": {}
 							}
 						]
+					},
+					{
+						"name": "Set variable1",
+						"type": "SetVariable",
+						"dependsOn": [
+							{
+								"activity": "Copy data1",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"variableName": "tempVariable",
+							"value": "temp"
+						}
 					}
 				],
 				"policy": {
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
+				},
+				"variables": {
+					"tempVariable": {
+						"type": "String"
+					}
 				},
 				"annotations": [],
 				"lastPublishTime": "2022-11-08T06:46:12Z"
