@@ -1,0 +1,9 @@
+{
+	"name": "devazuredatafactorytest",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4b0cf2e3-e881-43e5-9327-45658ae91bab",
+		"tenantId": "620c3756-0d2d-4aeb-a01b-879cb0849427"
+	}
+}
